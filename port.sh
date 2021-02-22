@@ -6,3 +6,4 @@
 
 cp ./webpage/* /var/www/
 cp ./lighttpd.conf /etc/lighttpd/
+cp ./cgi/cgi-bin/* /var/www/cgi-bin
