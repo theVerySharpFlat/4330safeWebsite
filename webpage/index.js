@@ -2,10 +2,10 @@ let btn = document.getElementById("cgibtn");
 btn.addEventListener("click", cgi);
 
 function cgi(){
-    getHello_cgi();
+    getMain_cgi();
     console.log("we got to line 6");
 }
-function getHello_cgi(){
+function getMain_cgi(){
     var xhr = new XMLHttpRequest();
 
     xhr.open("GET", "cgi-bin/main.cgi", true);
