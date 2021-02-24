@@ -8,5 +8,5 @@
 
 
 chmod -R 755 .
-chmod -R 755 /var/www
+chmod -R 755 /www/4330safeWebsite/
 chmod -R 755 /etc/lighttpd
