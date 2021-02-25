@@ -4,14 +4,38 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./index.js" defer></script>
         <link rel="stylesheet" type="text/css" href="./styles.css"/>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
         <title>4330safe</title>
     </head>
-    <body>
-        <script src="./index.js" defer></script>
-        <h1>4330's safe website</h1>
-        <span>currently this is just going to be used for cgi testing until we get an actual app up <br/></span>
-        <button id="cgibtn">click me for some cgi magic!</button>
+    <body class="dark">
+        <ion-app>
+            <ion-header>
+                <ion-toolbar color=primary>
+                    <ion-title>Safe</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-card>
+                    <div class="ion-text-center">
+                        <ion-text>
+                            <h2>Click the button below to unlock the safe!</h2>
+                        </ion-text> 
+                        <ion-button position="float" id="cgibtn">Unlock</ion-button>
+                    </div>
+                </ion-card>
+            </ion-content>
+            <ion-footer>
+                <ion-card>
+                    <ion-text>
+                        <h3 id="safestatus"></h3>
+                    </ion-text>
+                </ion-card>
+            </ion-footer>
+        </ion-app>
         
     </body>
 </html>

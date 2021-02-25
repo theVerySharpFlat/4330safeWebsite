@@ -7,6 +7,7 @@
 # -R option recursively gives the shell script permission
 
 
-chmod -R 775 /www/
+chmod 775 /www/4330safeWebsite/
 chmod -R 775 /www/4330safeWebsite/
-chmod -R 775 /etc/lighttpd/ 
+chmod -R 775 /etc/lighttpd/
+chmod 777 /www/4330safeWebsite/cgiscripts/safe.status
